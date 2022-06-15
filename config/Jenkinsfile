@@ -1,6 +1,7 @@
 #!groovy
-node {
-stage(name: "Hello") {
-sh("echo Hello World!")
+stage(name: "Aprovao") {
+      echo 'Ignorada a etapa de aprovao para deploy do projeto!'
 }
+stage(name: "Aprov") {
+      echo 'OneTho'
 }
