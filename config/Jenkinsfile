@@ -1,5 +1,5 @@
 #!groovy
-node("builder") {
+node("master") {
 	   stage(name: "Aprovao") {
                   echo 'Ignorada a etapa de aprovao para deploy do projeto!'
          }
