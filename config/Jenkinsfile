@@ -1,0 +1,8 @@
+#!groovy
+stage(name: "Aprovao") {
+    if (params.skipApproval) {
+      echo 'Ignorada a etapa de aprovao para deploy do projeto!'
+    } else {
+      input 'Aguardando aprovao para continuao do deploy do projeto!'
+    } 
+}
