@@ -1,6 +1,17 @@
 #!groovy
-node("master") {
+try {
+    node("master") {
+	stage(name: "Git Checkout") {
+		
+		checkout scm	 
+ 
+	    }
 	   stage(name: "Aprovao") {
                   echo 'Ignorada a etapa de aprovao para deploy do projeto!'
          }
 }
+    } catch (Exception e) {
+ 	
+        throw e;
+      }
+
