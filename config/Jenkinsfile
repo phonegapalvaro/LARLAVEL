@@ -1,8 +1,8 @@
 #!groovy
 try {
     node("master"){
-	stage(name: "Aprovao") {
-                  echo 'Ignorada a etapa de aprovao para deploy do projeto!'
+	stage(name: "Hello") {
+                  echo 'echo: oi'
          }
 }
     } catch (Exception e) {
