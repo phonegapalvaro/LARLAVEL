@@ -1,6 +1,6 @@
 #!groovy
 try {
-    node{
+    node("master"){
 	stage(name: "Git Checkout") {
 		
 		checkout scm	 
